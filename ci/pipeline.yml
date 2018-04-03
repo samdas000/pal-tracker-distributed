@@ -126,7 +126,7 @@ jobs:
 - name: deploy-timesheets
   plan:
   - get: pal-tracker
-    passed: [build, deploy-registration]
+    passed: [build, deploy-registration ]
     trigger: true
   - get: timesheets-artifacts
     trigger: false
